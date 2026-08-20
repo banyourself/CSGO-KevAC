@@ -1,0 +1,395 @@
+"Phrases"
+{
+	// Plain text used for the kick/ban reason dialog (color codes do not render there).
+	"PREFIX"
+	{
+		"en"		"[KevAC]"
+		"ru"		"[KevAC]"
+		"pt"		"[KevAC]"
+	}
+	"REASON"
+	{
+		"en"		"Using third-party software"
+		"ru"		"Использование стороннего ПО"
+		"pt"		"Usando software de terceiros"
+	}
+
+	"Ban_PublicReason"
+	{
+		"en"		"Cheating Detected"
+	}
+
+	// Chat colors are applied by KevAC.sp. Keep every phrase as editable text.
+	"Detected_Chat"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"{1} was flagged for {2}."
+		"ru"		"{1} обнаружен: {2}."
+		"pt"		"{1} foi detectado por {2}."
+	}
+	"Detected_Server"
+	{
+		"#format"	"{1:N},{2:L},{3:s}"
+		"en"		"{1} ({2}) flagged for {3}"
+		"ru"		"{1} ({2}) обнаружен: {3}"
+		"pt"		"{1} ({2}) detectado por {3}"
+	}
+	"Chat_Prefix"
+	{
+		"en"		"KevAC"
+	}
+	"Startup_Active"
+	{
+		"en"		"Anti-cheat loaded and active."
+	}
+	"Startup_ExtMissing"
+	{
+		"en"		"WARNING: KevAC.ext is not running. Event-listener detection is off. Use sm_kevac_ext for details."
+	}
+	"Alerts_Console"
+	{
+		"en"		"[KevAC] !alerts is available in-game to admins."
+	}
+	"Alerts_Enabled"
+	{
+		"en"		"Detection alerts are now enabled."
+	}
+	"Alerts_Disabled"
+	{
+		"en"		"Detection alerts are now disabled."
+	}
+	"Alerts_PersonalOnly"
+	{
+		"en"		"Alert scope: only your detections."
+	}
+	"Alerts_PersonalAll"
+	{
+		"en"		"Alert scope: all detections."
+	}
+	"Capture_Stopped"
+	{
+		"en"		"Capture stopped. Diagnostic mode remains enabled until sm_kevac_testlog is set to 0."
+	}
+	"Capture_Disabled"
+	{
+		"en"		"Diagnostic capture is off. Set sm_kevac_testlog to 1 first."
+	}
+	"Capture_AccessDenied"
+	{
+		"en"		"Diagnostic capture requires ROOT admin access."
+	}
+	"Capture_Usage"
+	{
+		"en"		"Usage: cheat <detector> <player> or legit <detector> <player>."
+	}
+	"Probe_Armed"
+	{
+		"#format"	"{1:s}"
+		"en"		"Logging enabled for the next player connection - Type: {1}."
+	}
+	"Capture_Started"
+	{
+		"#format"	"{1:s},{2:N},{3:s}"
+		"en"		"{1} logging enabled for {2} - Type: {3}."
+	}
+	"Capture_Failed"
+	{
+		"#format"	"{1:N}"
+		"en"		"Could not open the diagnostic log for {1}. Check addons/sourcemod/logs permissions."
+	}
+	"Probe_Started"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"Probe capture started for {1} - Type: {2}."
+	}
+	"Probe_Finished"
+	{
+		"#format"	"{1:s}"
+		"en"		"Probe capture finished for the {1} player. Diagnostic mode remains enabled."
+	}
+	"Alert_Detection"
+	{
+		"#format"	"{1:N},{2:s},{3:s},{4:s}"
+		"en"		"{1} flagged: {2} - {3}{4}"
+	}
+	"PreBan_Started"
+	{
+		"#format"	"{1:N},{2:s},{3:d}"
+		"en"		"Pre-ban audit started for {1}: {2}. Enforcement in {3} seconds - use !cancelban to stop it."
+	}
+	"Alert_Whitelisted"
+	{
+		"en"		" (whitelisted)"
+	}
+	"Whitelist_Usage"
+	{
+		"en"		"[SM] Usage: sm_ad_whitelist_add <steamid>"
+	}
+	"Whitelist_Added"
+	{
+		"#format"	"{1:s}"
+		"en"		"[SM] {1} successfully added to whitelist"
+	}
+	"Whitelist_WriteFailed"
+	{
+		"#format"	"{1:s}"
+		"en"		"[SM] Failed to open {1} for writing"
+	}
+	"Whitelist_Loaded"
+	{
+		"#format"	"{1:d}"
+		"en"		"[KevAC] {1} SteamIDs loaded from whitelist"
+	}
+	"Whitelist_List"
+	{
+		"#format"	"{1:d}"
+		"en"		"[KevAC] Listing current whitelist ({1} SteamIDs):"
+	}
+	"Config_Reloaded"
+	{
+		"en"		"[KevAC] Config reloaded; cheat-cvar list reloaded."
+	}
+	"Help_Title"
+	{
+		"en"		"[KevAC] Admin commands:"
+	}
+	"Help_Kevac"
+	{
+		"en"		"  !kevac - show HnS policy, detector labels, and diagnostic syntax"
+	}
+	"Help_Alerts"
+	{
+		"en"		"  !alerts - toggle your live detector alerts on or off"
+	}
+	"Help_Stats"
+	{
+		"en"		"  sm_kevac_stats <player> - BASH strafe deviation, gain/SPJ, mouse model, listener counts"
+	}
+	"Stats_Title"
+	{
+		"#format"	"{1:N}"
+		"en"		"BASH stats for {1}:"
+	}
+	"Stats_Strafe"
+	{
+		"#format"	"{1:d},{2:d},{3:f},{4:f},{5:d},{6:d},{7:d},{8:f},{9:f},{10:d}"
+		"en"		"start: {1}/{2} dev {3} avg {4} (ident {5}) | end: {6}/{7} dev {8} avg {9} (ident {10})"
+	}
+	"Stats_Gain"
+	{
+		"#format"	"{1:f},{2:f},{3:f}"
+		"en"		"gain {1}% spj {2} | live gain {3}%"
+	}
+	"Help_Ext"
+	{
+		"en"		"  sm_kevac_ext - extension status + per-client listener telemetry"
+	}
+	"Help_ListenerAudit"
+	{
+		"en"		"  sm_kevac_listeneraudit <player> [event1,event2,...|all] - safely test candidates or write a full catalog snapshot"
+	}
+	"Help_ListenerAuditAll"
+	{
+		"en"		"  sm_kevac_listenerauditall - write every connected player's full listener catalog to the KevAC audit log"
+	}
+	"Help_StabTrace"
+	{
+		"en"		"  sm_kevac_stabtrace <player> [seconds] - temporarily trace knife input, cooldowns, damage hooks, and missed-swing reconciliation to KevAC-stabtrace.log"
+	}
+	"StabTrace_Usage"
+	{
+		"en"		"Usage: sm_kevac_stabtrace <#userid|name> [seconds]"
+	}
+	"StabTrace_Started"
+	{
+		"#format"	"{1:N},{2:d}"
+		"en"		"[KevAC] Knife-stab trace started for {1} for {2} seconds. Results are in KevAC-stabtrace.log."
+	}
+	"StabTrace_Stopped"
+	{
+		"#format"	"{1:N}"
+		"en"		"[KevAC] Knife-stab trace stopped for {1}."
+	}
+	"ListenerAudit_Usage"
+	{
+		"en"		"Usage: sm_kevac_listeneraudit <player> [event1,event2,...]"
+	}
+	"ListenerAuditAll_Usage"
+	{
+		"en"		"Usage: sm_kevac_listenerauditall"
+	}
+	"ListenerAudit_NativeMissing"
+	{
+		"en"		"[KevAC] Listener audit is unavailable. Load the matching KevAC.ext build first."
+	}
+	"ListenerAudit_NoTelemetry"
+	{
+		"#format"	"{1:N}"
+		"en"		"[KevAC] No verified listener table is available for {1} yet. Wait for sm_kevac_ext to show decoded telemetry, then retry."
+	}
+	"ListenerAudit_None"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"[KevAC] Listener audit for {1}: none of these candidates are subscribed: {2}"
+	}
+	"ListenerAudit_Result"
+	{
+		"#format"	"{1:N},{2:d},{3:s}"
+		"en"		"[KevAC] Listener audit for {1}: {2} subscribed candidate(s): {3}"
+	}
+	"ListenerAudit_AllLogged"
+	{
+		"#format"	"{1:N},{2:d},{3:d}"
+		"en"		"[KevAC] Wrote {2}/{3} catalog listener(s) for {1} to addons/sourcemod/logs/KevAC-listeners.log."
+	}
+	"ListenerAuditAll_Logged"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"en"		"[KevAC] Wrote full listener snapshots for {1}/{2} connected player(s) to addons/sourcemod/logs/KevAC-listeners.log; {3} had no decoded listener telemetry yet."
+	}
+	"Ext_Running"
+	{
+		"en"		"[KevAC] Extension KevAC.ext: RUNNING (ListenEvents probe loaded; counts require observed packets)"
+	}
+	"Ext_NotRunning"
+	{
+		"#format"	"{1:d},{2:s}"
+		"en"		"[KevAC] Extension KevAC.ext: NOT RUNNING (status {1}) {2} - listener detection is OFF"
+	}
+	"Ext_ClientTelemetry"
+	{
+		"#format"	"{1:N},{2:d},{3:d},{4:d},{5:s},{6:s}"
+		"en"		"  {1}: {2} active subs (peak {3}), {4} blacklisted{5}{6}"
+	}
+	"Ext_ClientFingerprint"
+	{
+		"#format"	"{1:N},{2:d}"
+		"en"		"    {1}: listener mask fingerprint {2}"
+	}
+	"Ext_FullUpdate"
+	{
+		"#format"	"{1:d},{2:d},{3:d},{4:d}"
+		"en"		"[KevAC] Full-update telemetry: {1} client vtable hook(s), {2} acknowledgement call(s), {3} current client-issued full-update command(s). Action={4}."
+	}
+	"Ext_StaticRouteEnabled"
+	{
+		"en"		"[KevAC] Route A static ListenEvents detour: INSTALLED. This confirms the engine signature matched; packet counters require a server-visible client subscription."
+	}
+	"Ext_StaticRouteOff"
+	{
+		"en"		"[KevAC] Route A static ListenEvents detour: NOT INSTALLED. Listener packet detection is unavailable until the extension and kevac.games are corrected."
+	}
+	"Ext_StaticRouteUnknown"
+	{
+		"en"		"[KevAC] Route A static ListenEvents detour: STATUS UNAVAILABLE. Rebuild KevAC.ext to expose this diagnostic native; packet counters remain available."
+	}
+	"Ext_ListenerCeiling"
+	{
+		"#format"	"{1:d},{2:d}"
+		"en"		"[KevAC] Listener ceiling: kevac_listener_max_subs={1} action={2}. Do not calibrate it while clients show [NO LISTENEVENTS PACKET YET]."
+	}
+	"Ext_ListenerProbe"
+	{
+		"#format"	"{1:d},{2:d},{3:d},{4:d},{5:d}"
+		"en"		"[KevAC] ListenEvents probes: {1} static callback(s), {2} static human-client callback(s), {3} static accepted packet(s), {4} vtable packet(s), {5} decoded telemetry update(s)."
+	}
+	"Ext_ListenerVerified"
+	{
+		"#format"	"{1:d}"
+		"en"		"[KevAC] Listener detection is verified from {1} decoded CS:GO packet(s). Post-grace updates and blacklisted subscriptions are actionable."
+	}
+	"Ext_VtableOff"
+	{
+		"en"		"[KevAC] Route B (in-plugin vtable hook): OFF by config (kevac_vtable_hooks 0, safe default). Not a failure. Listener detection here relies on Route A (the extension detour) above. Enable only on a test server."
+	}
+	"Ext_VtableOnOk"
+	{
+		"#format"	"{1:d}"
+		"en"		"[KevAC] Route B (in-plugin vtable hook): ON, {1} client hook(s) attached and the vtable hook object is built."
+	}
+	"Ext_VtableBlocked"
+	{
+		"en"		"[KevAC] Route B (in-plugin vtable hook): BLOCKED. Its inferred CGameClient offsets crashed this server on player join, so KevAC will not attach raw vtable hooks on this build. Route A is unaffected, and all non-vtable detectors remain active."
+	}
+	"Ext_VtableOnFailed"
+	{
+		"en"		"[KevAC] Route B (in-plugin vtable hook): ON but the hook object FAILED to build - the kevac.games offsets are missing or wrong for this engine build. Set kevac_vtable_hooks 0 to stay safe, then fix the gamedata."
+	}
+	"Ext_ListenerRawOnly"
+	{
+		"en"		"[KevAC] Route A (extension detour) is reached but no per-client listener mask was decoded. This is diagnostic only; a missing mask is never enforcement evidence."
+	}
+	"Ext_ListenerUnavailable"
+	{
+		"en"		"[KevAC] No server-visible ListenEvents subscription packet has been observed on either route. A vanilla client can legitimately send none. This neither proves the detour failed nor proves a client is clean. Test with a DLL feature that changes its server subscription mask."
+	}
+	"Help_WhitelistList"
+	{
+		"en"		"  sm_ad_whitelist_list - show whitelisted SteamIDs (BAN flag)"
+	}
+	"Help_ConfigReload"
+	{
+		"en"		"  sm_ad_config_reload - re-exec KevAC.cfg + reload cvar/immune lists"
+	}
+	"Help_WhitelistReload"
+	{
+		"en"		"  sm_ad_whitelist_reload - reload whitelist.ini"
+	}
+	"Help_WhitelistAdd"
+	{
+		"en"		"  sm_ad_whitelist_add <steamid> - add a SteamID to the whitelist"
+	}
+	"Help_HnsPolicy"
+	{
+		"en"		"[KevAC] HnS policy: movement and knife protections are enabled. Gun-specific aim checks are disabled in KevAC.cfg."
+	}
+	"Help_BacktrackPolicy"
+	{
+		"en"		"[KevAC] Backtrack: historical-tick detection and command-tick patching are present but disabled by default. Enable only after high-latency testing."
+	}
+	"Help_CadencePolicy"
+	{
+		"en"		"[KevAC] Input cadence: raw scroll and duck macro checks are disabled for normal wheel binds; completed jumpbug timing is enabled by KevAC.cfg."
+	}
+	"Help_DiagnosticTitle"
+	{
+		"en"		"[KevAC] Diagnostic capture: set sm_kevac_testlog 1; ROOT admin; type these in chat:"
+	}
+	"Help_Cheat"
+	{
+		"en"		"  cheat <detector> <player> - start a DLL/cheat per-tick capture"
+	}
+	"Help_Legit"
+	{
+		"en"		"  legit <detector> <player> - start a legit per-tick capture"
+	}
+	"Help_Probe"
+	{
+		"en"		"  dllplayer join / nodllplayer join - capture the next joining player; start confirmation is printed to admins"
+	}
+	"Help_Stop"
+	{
+		"en"		"  stop - end the active capture or join probe"
+	}
+	"Help_Detectors"
+	{
+		"en"		"  detectors: eventlistener fullupdate ghost ghostjump synth angle mouseangle backtrack bhop scroll duckmacro jumpbug jumpbugtiming groundjumpbug ahk silent pattern knife lerp cheatvar cvarprobe usercmd antiduck strafesync gain illegalmove cmdrate; gun-only: aimbot trigger psilent"
+	}
+
+	"PreBan_Cancelled"
+	{
+		"#format"	"{1:N},{2:s}"
+		"en"		"Pending ban cancelled for {1} ({2})."
+	}
+
+	"PreBan_NonePending"
+	{
+		"#format"	"{1:N}"
+		"en"		"{1} has no pending pre-ban."
+	}
+
+	"PreBan_CancelUsage"
+	{
+		"en"		"Usage: sm_cancelban <#userid|name> - cancels that player's pending KevAC ban."
+	}
+}
